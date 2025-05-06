@@ -12,7 +12,7 @@ import java.io.IOException;
 public class ModelConfig {
     @Bean
     public MultiLayerNetwork trashClassificationModel() throws IOException {
-        File modelFile = new File("src/main/resources/model/model.zip");
+        File modelFile = new File("resources/model/model.zip");
         MultiLayerNetwork model = ModelSerializer.restoreMultiLayerNetwork(modelFile);
         model.init();
 
